@@ -1,0 +1,14 @@
+@media (max-width: 576px) {
+    .team-member, .about-container, .about-content {
+        width: 100%;
+      }
+
+      .team, .about {
+        width: 100%;
+        padding: 75px 0px;
+      }
+}
+
+@media (max-width: 300px) {
+
+}

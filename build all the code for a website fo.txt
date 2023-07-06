@@ -1,0 +1,87 @@
+Build the code files for a static website of a software development company named Lilium, which has the following pages and files: 1. Homepage (https://roilev1999.wixsite.com/mysite/), 2. Services (https://roilev1999.wixsite.com/mysite/services), 3. About (https://roilev1999.wixsite.com/mysite/about), 4. Our Team (https://roilev1999.wixsite.com/mysite/our-team), 5. Contact us (https://roilev1999.wixsite.com/mysite/contact).
+Build full HTML, Javascript and CSS files. Design it to look luxurious and smooth with elegant animations.
+
+General components:
+header, sticky navbar - has the company's logo on the left, and a navigation menu that includes 1. "Services", 2. dropdown "Company" with "About" and "Our Team", 3. "Contact". With links to the different pages and "Get a Quote" button.
+In the footer, include two columns: 1. Contact (has address, phone number and email, Get a Quote button), 2. follow us on Facebook, LinkedIn, Twitter. and in different row "© 2023 by Lilum LTD."
+
+The following are the details of each page:
+-Homepage:
+"Make Your Tech Dreams a Reality
+Professional Tech Solutions Under One Roof
+
+Get a Quote
+
+
+Among Our Clients
+<4 clients' logos designed nicely>"
+
+-Services:
+"What We Can Do for You
+MVP Development Services
+Accelerate your product's journey from idea to market success with our MVP Development Services. We help startups build and validate their core product quickly, attracting early users and securing valuable investment.
+
+AI Development
+Unleash the power of AI with our cutting-edge development services. We specialize in creating intelligent solutions that automate tasks, extract insights, empowering your business to thrive in the digital age.
+
+SAAS Solution Development
+Elevate your business with our expert SAAS solution development. We craft scalable and customizable software-as-a-service solutions that streamline operations, increase efficiency, and drive growth, tailored to your unique needs and goals.
+
+Software & Web Development
+Transform your ideas into reality with our expert software and web development services. We create powerful, customized solutions that drive innovation, enhance user experiences, and propel your business forward in the digital landscape.
+
+'The future is already here – it's just not evenly distributed.'
+William Gibson
+
+Get a Quote"
+
+-About: 
+"About
+Lilium is a leading Israeli company specializing in software outsourcing and development services. With a deep-rooted commitment to excellence, innovation, and customer satisfaction, we empower businesses worldwide by providing them with top-notch technological solutions tailored to their specific needs.
+
+​
+
+At Lilium, we understand the challenges faced by businesses in today's rapidly evolving digital landscape. Our team of highly skilled software engineers, developers, and designers work tirelessly to deliver cutting-edge software solutions that enable our clients to stay ahead of the competition."
+
+-Team:
+"Our Team
+Who We Are
+
+1H6A9469_1x_1-1.png
+Meir Brandwine
+CTO
+
+As Lilium's CTO, Meir spearheads our technical endeavors with unparalleled expertise. With a strong background in software development and a keen eye for emerging technologies, he leads our talented team of engineers, ensuring the delivery of robust and scalable solutions. Meir is dedicated to leveraging technology to drive innovation and exceed client expectations.
+
+Shali Brandwine
+CEO
+
+Shali is the visionary leader behind Lilium, bringing his extensive expertise in business development. With a passion for innovation and a strategic mindset, he drives the company's growth and guides the team towards excellence. Shali is committed to delivering cutting-edge solutions that empower businesses to thrive in the digital landscape"
+
+Contact:
+"Contact Us
+The time to create is now
+
+First Name
+Last Name
+Email
+Phone
+Job title
+Subject
+Leave us a message...
+
+Submit"
+
+Do not limit yourself and use any source to make the pages look like their online versions on Wix.
+Make it a dark luxurious design.
+
+Addresses of photos: 1. the company's logo: https://i.ibb.co/1z4jcdJ/Whats-App-Image-2023-06-25-at-22-35-24.jpg
+2. Meir' photo: https://i.ibb.co/d4RzbvD/1-H6-A9469-1x-1.png
+3. Shali's photo: https://i.ibb.co/HDQR2gV/1H6A9469.png
+4. background photo: https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000&t=st=1687794804~exp=1687795404~hmac=d744c28a7a0668880021552e59b5a0b2de639570b7eedd83b58af4f154ddf7de
+
+Please add scrolling and loading Javascript animations for the website so that it'll look interactive and nice when loaded and when scrolling it.
+
+Please make sure that the website is responsive for 4 most popular devices' resolutions.
+
+Don't worry about scope and use libraries freely! make it beautiful and full!

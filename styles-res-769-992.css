@@ -1,0 +1,50 @@
+@media (min-width: 769px) and (max-width: 992px) {
+    .my-element {
+        /* Styles for small desktops here */
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .navbar-nav {
+        border-radius: 0;
+        font-size: 18px;
+        background-color: #000;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      .navbar .get-a-quote-navbar, a.btn.btn-primary.get-a-quote-navbar {
+        display: none;
+        margin: none;
+      }
+
+      .navbar {
+        padding-right: inherit;
+        padding-left: inherit;
+      }
+
+      .hero {
+        align-items: unset;
+        padding: 100px 20px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        width: 80%;
+      }
+
+      footer {
+        display: block;
+      }
+
+      .team-member {
+        width: 90%;
+      }
+      /* .team-member h2 {
+        font-size: 48px;
+      }
+
+      .team-member p {
+        font-size: 42px;
+      } */
+}
