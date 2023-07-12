@@ -16,6 +16,9 @@
     var linkStylesCssThree = document.createElement('link');
     linkStylesCssThree.href = "styles-res-max-576.css";
     linkStylesCssThree.rel = "stylesheet";
+    var devIconCdn = document.createElement('link');
+    devIconCdn.href = "https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css";
+    devIconCdn.rel = "stylesheet";
     var linkStackpathBootstrap = document.createElement('link');
     linkStackpathBootstrap.href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
     linkStackpathBootstrap.rel = "stylesheet";
@@ -31,7 +34,8 @@
     var scriptBootstrap = document.createElement('script');
     scriptBootstrap.src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js";
     var scriptFontawesome = document.createElement('script');
-    scriptFontawesome.src = "https://kit.fontawesome.com/a076d05399.js";
+    scriptFontawesome.src = "https://kit.fontawesome.com/def859abd1.js";
+    scriptFontawesome.crossorigin = 'anonymous';
     var linkLogo = document.createElement('link');
     linkLogo.href = 'logo.webp';
     linkLogo.rel = 'icon';
@@ -53,6 +57,7 @@
     document.head.appendChild(linkStylesCssOne);
     document.head.appendChild(linkStylesCssTwo);
     document.head.appendChild(linkStylesCssThree);
+    document.head.appendChild(devIconCdn);
     document.head.appendChild(scriptFontawesome);
     
     // Create a new header element
@@ -142,6 +147,16 @@
     addActiveLinktoActiveNavLink();
     window.scrollTo(0, 0);
     fadeEffect();
+
+    scriptJQueryFourth.addEventListener('load', function() {
+      $(window).scroll(function() {
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
+        if(!isSafari) return;
+        var scrolledY = $(window).scrollTop();
+        $('body').css('background-attachment', 'scroll');
+        // $('body').css('background-position', 'center ' + ((scrolledY)) + 'px');
+    });
+    });
   }
   
   function addActiveLinktoActiveNavLink() {

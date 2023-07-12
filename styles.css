@@ -799,3 +799,29 @@ body.loaded {
       color: #fff;
       line-height: 1.6;
     }
+
+    .specialization {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: black;
+      padding: 50px 20px;
+    }
+
+    .specilization-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .specilization-item {
+      font-size: 22px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 21px 10px;
+    margin: 10px;
+    }

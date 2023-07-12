@@ -1,9 +1,9 @@
 @media (max-width: 576px) {
-    .team-member, .about-container, .about-content {
+    .team-member, .about-container, .about-content, .services-container, .service-card {
         width: 100%;
       }
 
-      .team, .about {
+      .team, .about, #services {
         width: 100%;
         padding: 75px 0px;
       }
