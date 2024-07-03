@@ -1,5 +1,10 @@
 :root {
-  --color_0: 255,255,255;
+  --main_background: rgb(236 236 236);
+  --title_color: black;
+  --title_size:  2.5vw;
+  --title_weight: bold;
+  --logo_icon_color: #cd9b3d;
+  /* --color_0: 255,255,255;
     --color_44: 0,6,15;
     --color_22: 144,47,26;
     --color_1: 255,255,255;
@@ -118,7 +123,7 @@
     --shc-mutated-brightness: 29,53,127;
     --fnt: normal normal normal 16px/1.4em proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;
     --label-align: center;
-    --label-text-align: center;
+    --label-text-align: center; */
 }
 
 /* Reset default browser styles */
@@ -145,7 +150,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   /* background: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000&t=st=1687794804~exp=1687795404~hmac=d744c28a7a0668880021552e59b5a0b2de639570b7eedd83b58af4f154ddf7de) center/cover; */
   color: #fff;
-  background-color: black;
+  /* background-color: black; */
 }
 
 /* Header */
@@ -154,7 +159,18 @@ header {
   top: 0;
   z-index: 100;
 }
-
+.title {
+  font-size: var(--title_size);
+  font-weight: var(--title_weight);
+  color: var(--title_color);
+}
+.intro-image-container {
+  padding-top: 5vh;
+}
+.intro-image {
+  width: 40vw;
+  height: 25vw;
+}
 nav {
   display: flex;
   align-items: center;
@@ -197,12 +213,12 @@ nav {
 /* Main */
 main {
   min-height: 100%;
-  background-color: rgb(236 236 236);
+  background-color: var(--main_background);
   color: white;
 }
 
 main section {
-  padding: 10vh 3.9vw 5vh 3.9vw;
+  padding: 12vh 3.9vw 5vh 3.9vw;
 }
 
 .introduction-content {
@@ -217,7 +233,7 @@ main section {
 .hero {
   align-items: center;
   display: flex;
-  padding: 12vh 5vw 3vh 3vw;
+  padding: 2vh 5vw 3vh 5vw;
   min-height: 75vh;
 }
 
@@ -240,12 +256,17 @@ main section {
   margin-bottom: 40px;
   color: black;
 }
+article {
+  min-height: 100vh;
+}
 .challenge {
-  padding: 7vh 3.9vw 5vh 3.9vw;
+  padding: 11vh 3.9vw 5vh 5vw;
 }
 .challenge-title {
-  color: #000;
-  font-size: 2.5vw;
+  color: var(--title_color);
+  font-size: var(--title_size);
+  font-weight: var(--title_weight);
+  margin-bottom: 3vh;
 }
 .challenge-content  {
   color: #000;
@@ -262,7 +283,7 @@ main section {
   color: #fff;
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 5vh 1vw;
+  padding: 4vh 5vw;
   justify-content: space-between;
 }
 
@@ -288,7 +309,7 @@ main section {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 .clients .client-logo:hover {
@@ -397,6 +418,8 @@ cite {
 }
 
 .contact h2 {
+  font-weight: bold;
+  color: #000;
   font-size: 36px;
   margin-bottom: 40px;
 }
@@ -541,18 +564,18 @@ footer a:hover {
       text-decoration: none;
       text-align: center;
       border-radius: 4px;
-      background-color: rgb(83, 97, 116);
+      background-color: rgb(4, 4, 5,0.8);
       color: #ffffff;
       border: none;
       cursor: pointer;
-      transition: background-color 0.3s;
+      /* transition: background-color 0.3s; */
       border-radius: var(--rd,10px);
       font: var(--fnt,var(--font_1));
     }
 
     .get-a-quote:hover {
-      background-color: rgb(83, 97, 116,0.5);;
-      color: black;
+      background-color:rgb(4, 4, 5,0.5);;
+      color: rgb(4, 4, 5,0.8);
       text-decoration: none;
     }
 
@@ -564,7 +587,7 @@ footer a:hover {
       text-decoration: none;
       text-align: center;
       border-radius: 4px;
-      background-color: #1a73e8;
+      background-color: rgb(0, 0, 0);;
       color: #ffffff;
       border: none;
       cursor: pointer;
@@ -575,7 +598,7 @@ footer a:hover {
 
     .get-a-quote-navbar:hover {
       background-color: white;
-      color: #1a73e8;
+      color: var(--logo_icon_color);
       text-decoration: none;
     }
 
@@ -591,7 +614,7 @@ footer a:hover {
     }
     
     .navbar-dark .navbar-nav .nav-link:hover {
-      color: #007bff;
+      color: #cd9b3d;
       transition: color 0.4s;
     }
     
@@ -641,33 +664,34 @@ footer a:hover {
 
   .dropdown-menu a:hover {
       background-color: black;
-      color: #007bff;
+      color: var(--logo_icon_color);
       transition: color 0.4s;
   }
 
   
   .navbar-nav .active-link, .dropdown-menu .active-link {
-    color: #007bff !important;
+    color: var(--logo_icon_color) !important;
   }
 
   /* Apply the transition to the main content container */
 .main-content-container {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  /* transition: opacity 0.5s ease-in-out; */
 }
 
 /* Apply the transition to any elements you want to animate */
 *, .fade-on-scroll {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  /* transform: translateY(20px); */
+  /* transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; */
 }
 
 /* Add the fade-in and slide-up animation */
 *.fade-in {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  /* transform: translateY(0); */
+  transition: opacity 1.5s ease-in-out;
+  /* transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out; */
 }
 
 
@@ -675,9 +699,9 @@ footer a:hover {
 body {
   overflow-x: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  /* transition: opacity 0.5s ease-in-out; */
   /* background: url('bg-2.webp') center/cover; */
-  background: #fafaf2;
+  background: var(--main_background);
 
   min-height: 100%;
   background-attachment: fixed;
@@ -689,7 +713,7 @@ body {
 /* Add the fade-in animation to the body after the page is loaded */
 body.loaded {
   opacity: 1;
-  transition: opacity 1s ease-in-out;
+  /* transition: opacity 1s ease-in-out; */
 }
 
 
@@ -709,7 +733,7 @@ body.loaded {
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
+      /* transition: transform 0.3s ease; */
     }
 
     .service-card:hover {
@@ -822,13 +846,10 @@ body.loaded {
       color: #fff;
     }
 
-    .about-content p {
-      font-size: 18px;
-      color: #fff;
-      line-height: 1.6;
-    }
+
 .welcome-introduction {
   max-height: 80vh ;
+  padding-left: 5vw;
 }
     .specialization {
       display: block;
@@ -836,7 +857,7 @@ body.loaded {
       align-items: center;
       flex-wrap: wrap;
       background-color: black;
-      max-height: 20vh;
+      max-height: 25vh;
       padding: 1.8vh 1vw;
         }
 

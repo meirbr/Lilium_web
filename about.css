@@ -1,0 +1,18 @@
+.about-content {
+color: black;
+}
+
+.about-content p {
+    font-size: 0.93vw;
+}
+
+.about-img {
+    width: 30vw;
+    height: 25vw;
+}
+.article {
+    display: flex;
+}
+.about-img-container {
+    padding: 17vh;
+}
