@@ -82,7 +82,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="about.html">About</a>
-            <a class="dropdown-item" href="team.html">Our Team</a>
+            <a class="dropdown-item" href="team.html">Management Board</a>
           </div>
         </li>
         <li class="nav-item">
