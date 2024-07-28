@@ -168,11 +168,11 @@ header {
 }
 
 .intro-image-container {
-  padding-top: 5vh;
+  /* padding-top: 5vh; */
 }
 
 .intro-image {
-  width: 40vw;
+  width: 100%;
   height: 25vw;
 }
 
@@ -234,6 +234,7 @@ main section {
 .specialize-title {
   display: flex;
   justify-content: center;
+  font-size: 2vw;
 }
 
 .hero {
@@ -301,7 +302,7 @@ article {
 
 .clients h1 {
   /* margin-top: 40px; */
-  font-size: 1vh 1.6vw;
+  font-size: 1.6vw;
 }
 
 .clients .client-logos {
@@ -566,11 +567,15 @@ footer a:hover {
 }
 
 .nav-item {
-  padding: 0.9vh 0.9vw;
+  padding: 0vh 0.9vw;
 }
 
 .nav-item a {
   padding: 0.5vh 0.5vw;
+}
+
+.btn.get-a-quote {
+font-size: 0.9vw;
 }
 
 .get-a-quote {
@@ -587,21 +592,20 @@ footer a:hover {
   cursor: pointer;
   /* transition: background-color 0.3s; */
   border-radius: var(--rd, 10px);
-  font: var(--fnt, var(--font_1));
+  /* font: var(--fnt, var(--font_1)); */
 }
 
 .get-a-quote:hover {
-  background-color: rgb(0, 0, 0, 0.5);
-  ;
+  background-color: rgba(166, 167, 149, 0.5);
   color: rgb(4, 4, 5, 0.8);
   text-decoration: none;
 }
 
 a.btn.btn-primary.get-a-quote-navbar {
   display: inline-block;
-  padding: 0.9vh 1vw 0.9vh 1vw;
+  padding: 1.29vh 1.25vw;
   font-size: 0.93vw;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
   text-align: center;
   border-radius: 4px;
@@ -611,7 +615,7 @@ a.btn.btn-primary.get-a-quote-navbar {
   cursor: pointer;
   transition: background-color 0.3s;
   border-radius: var(--rd, 10px);
-  font: var(--fnt, var(--font_1));
+  /* font: var(--fnt, var(--font_1)); */
 }
 
 .get-a-quote-navbar:hover {
@@ -623,7 +627,7 @@ a.btn.btn-primary.get-a-quote-navbar {
 a.btn.btn-primary.get-a-quote-navbar::before {
   background-color: transparent;
   color: red;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin: 0.9vh 0.4vw;
 }
 
@@ -637,9 +641,14 @@ a.btn.btn-primary.get-a-quote-navbar::before {
   transition: color 0.4s;
 }
 
+.navbar-toggler {
+  padding: 0.37vh 0.62vw;
+  font-size: 1vw;
+}
 
 .navbar-dark .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.5);
+  /* border-color: rgba(255, 255, 255, 0.5); */
+  border-color: black;
 }
 
 .navbar-expand-lg {
@@ -647,12 +656,12 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 }
 
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-dark .navbar-toggler-icon:focus,
 .navbar-dark .navbar-toggler-icon:hover {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.2)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /* CSS for the dropdown menu */
