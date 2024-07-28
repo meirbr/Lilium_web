@@ -89,7 +89,7 @@
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
         </ul>
-        <div class="nav-item" style="padding: 10px;"></div>
+        <div class="nav-item"></div>
         <div class="nav-item">
           <a class="btn btn-primary get-a-quote-navbar get-a-quote" href="contact.html">Get a Quote</a>
         </div>
