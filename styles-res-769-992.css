@@ -18,10 +18,10 @@
         margin: none;
       }
 
-      .navbar {
+      /* .navbar {
         padding-right: inherit;
         padding-left: inherit;
-      }
+      } */
 
       .hero {
         align-items: unset;
@@ -33,9 +33,9 @@
         width: 80%;
       }
 
-      footer {
+      /* footer {
         display: block;
-      }
+      } */
 
       .team-member {
         width: 90%;

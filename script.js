@@ -8,13 +8,13 @@
     linkStylesCss.rel = "stylesheet";
     document.head.appendChild(linkStylesCss);
     var linkStylesCssOne = document.createElement('link');
-    linkStylesCssOne.href = "styles-res-577-768.css";
+    // linkStylesCssOne.href = "styles-res-577-768.css";
     linkStylesCssOne.rel = "stylesheet";
     var linkStylesCssTwo = document.createElement('link');
-    linkStylesCssTwo.href = "styles-res-769-992.css";
+    // linkStylesCssTwo.href = "styles-res-769-992.css";
     linkStylesCssTwo.rel = "stylesheet";
     var linkStylesCssThree = document.createElement('link');
-    linkStylesCssThree.href = "styles-res-max-576.css";
+    // linkStylesCssThree.href = "styles-res-max-576.css";
     linkStylesCssThree.rel = "stylesheet";
     var devIconCdn = document.createElement('link');
     devIconCdn.href = "https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css";
@@ -102,14 +102,10 @@
     <p class="footer-details">Uziel 52, Jerusalem</p>
     <p class="footer-details">Phone: (+) 972 58 763 0661</p>
     <p class="footer-details">Email: shalibran@gmail.com</p>
-    <br />
-    
     <a class="btn get-a-quote whatsApp-logo" href="contact.html">
     <img class="WhatsApp-logo" src='images/WhatsApp_logo.svg' alt="WhatsApp Logo"/>
     </a>
-    <br />
     <p class="copyright">
-    <br />
       &copy; 2023 by Lilium LTD.
     </p>
   </div>
@@ -117,21 +113,13 @@
   <div class="footer-column">
   <h5>Menu</h5>
 <a href="index.html" class="footer-details">Home</a>
-  <br />
   <a href="services.html" class="footer-details">Services</a>
-  <br />
   <a href="about.html" class="footer-details">About</a>
-  <br />
   <a href="contact.html" class="footer-details">Contact</a>
-    </div>
-    
+    </div>    
   <div class="footer-column">
   <h5>Follow us on</h5>
-<a href="facebook.com" class="footer-details">Facebook</a>
-  <br />
   <a href="linkedin.com" class="footer-details">LinkedIn</a>
-  <br />
-  <a href="twitter.com" class="footer-details">Twitter</a>
     </div>
     `;
   

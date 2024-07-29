@@ -534,6 +534,8 @@ footer h5 {
 }
 .footer-details {
   font-size: 1vw;
+  display: flex;
+  padding: 0.5vh 0vw;
 }
 
 footer a {
@@ -569,11 +571,18 @@ footer a:hover {
   border-radius: var(--rd, 10px);
   font-size: 0.93vw;
   background-color: var(--lilium_logo_background_color);
-  /* padding: 10px 20px 10px 20px; */
   padding: 0.9vh 1vw 0.9vh 1vw;
   font: var(--fnt, var(--font_1));
 }
-
+.navbar-brand {
+  padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    margin-right: 0.83vw;
+    font-size: 1vw;
+}
+.col-6 {
+padding-right: 0.78vw;
+}
 .navbar-brand img {
   /* height: 5.55vh; */
   height: 6vh;
@@ -624,7 +633,12 @@ background-color: var(--lilium_logo_background_color);
   /* font: var(--fnt, var(--font_1)); */
 }
 
+.row {
+  margin-right: -0.78vw;
+    margin-left: -0.78vw;
+}
 .get-a-quote.whatsApp-logo {
+  margin: 1vh 0vw;
   padding: 0.9vh 1vw;
   border: #777 solid 0.15vw;
 }
@@ -759,9 +773,8 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 /* Add the fade-in and slide-up animation */
 *.fade-in {
   opacity: 1;
-  /* transform: translateY(0); */
   transition: opacity 1.5s ease-in-out;
-  /* transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out; */
+  transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 
@@ -769,15 +782,10 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 body {
   overflow-x: hidden;
   opacity: 0;
-  /* transition: opacity 0.5s ease-in-out; */
-  /* background: url('bg-2.webp') center/cover; */
+  transition: opacity 0.5s ease-in-out;
   background: var(--main_background);
-
   min-height: 100%;
   background-attachment: fixed;
-
-  /* Photo by <a href="https://unsplash.com/@maximalfocus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maximalfocus</a> on <a href="https://unsplash.com/photos/HakTxidk36I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   */
 }
 
 /* Add the fade-in animation to the body after the page is loaded */
@@ -923,7 +931,6 @@ body.loaded {
 
 .welcome-introduction {
   max-height: 80vh;
-  padding-left: 5vw;
 }
 
 .specialization {
