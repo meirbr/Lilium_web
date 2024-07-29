@@ -271,7 +271,6 @@ main section {
   margin-bottom: 1.85vh;
   color: black;
   font-weight: bold;
-  /* width: 60%; */
 }
 
 .hero p {
@@ -301,9 +300,6 @@ article {
 }
 
 .clients {
-  /* position: absolute;
-  left: 0vw;
-  top: 79.2vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,7 +315,6 @@ article {
 
 
 .clients h1 {
-  /* margin-top: 40px; */
   font-size: 1.6vw;
 }
 
@@ -327,12 +322,9 @@ article {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* margin-top: 40px; */
 }
 
 .clients .client-logo {
-  /* width: 150px;
-  height: 150px; */
   margin: 1.85vh 2vw;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0);
@@ -532,10 +524,15 @@ footer h5 {
   font-size: 1.2vw;
   margin-bottom: 0.41vw;
 }
+
 .footer-details {
   font-size: 1vw;
   display: flex;
   padding: 0.5vh 0vw;
+}
+
+.services {
+  padding: 12vh 2vw;
 }
 
 footer a {
@@ -582,6 +579,9 @@ footer a:hover {
 }
 .col-6 {
 padding-right: 0.78vw;
+}
+.service-right-side {
+  padding: 0px;
 }
 .navbar-brand img {
   /* height: 5.55vh; */
@@ -801,21 +801,28 @@ body.loaded {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .service-card {
-  width: 26vw;
+  width: 60vw;
+  height: 40vh;
   min-height: 18.5vh;
-  background-color: black;
+  background-color: var(--lilium_logo_background_color);
   margin: 1.85vh 1vw;
-  padding: 1.85vh 1vw;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   /* transition: transform 0.3s ease; */
 }
-
+.service-imag {
+  width: 100%;
+  height: 40vh;
+  /* height: 100%; */
+  border-radius: 10%;
+}
 .service-card:hover {
   transform: scale(1.05);
+  outline: none; /* מסיר את ה-outline */
 }
 
 .service-name::before {
@@ -825,9 +832,17 @@ body.loaded {
   left: -0.78vw;
   width: 0.4vw;
   height: 100%;
-  background-color: #2e86de;
+  /* background-color: var(--logo_icon_color); */
   /* Beautiful blue color */
   border-radius: 4px;
+}
+
+.service-right-side.description {
+  padding: 1vh 1vw;
+}
+
+.service-left-side.description {
+  padding: 1vh 1vw;
 }
 
 .service-name {
@@ -837,8 +852,8 @@ body.loaded {
 }
 
 .service-description {
-  padding: 2.77vh 1.56vw;
-  font-size: 0.93vw;
+  /* padding: 2.77vh 1.56vw; */
+  font-size: 1.2vw;
   /* color: #777; */
 }
 
