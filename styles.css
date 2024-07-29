@@ -173,7 +173,8 @@ header {
 
 .intro-image {
   width: 100%;
-  height: 25vw;
+  /* height: 25vw; */
+  height: 37vw;
 }
 
 nav {
@@ -221,9 +222,14 @@ main {
   background-color: var(--main_background);
   color: white;
 }
+.introduction-content {
+  /* padding: 11vh 3.9vw 5vh 5vw; */
+  padding: 8vh 3.9vw 5vh 5vw;
+}
 
 main section {
-  padding: 12vh 3.9vw 5vh 3.9vw;
+  /* padding: 12vh 3.9vw 5vh 3.9vw; */
+  padding: 0vh 3.9vw 0vh 3.9vw;
 }
 
 .introduction-content {
@@ -289,13 +295,13 @@ article {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: var(--lilium_logo_background_color);
   /* background: linear-gradient(to right,var(--lilium_logo_background_color), #a89d4a); */
-  min-height: 25vh;
+  min-height: 20vh;
   color: #fff;
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 4vh 5vw;
+  padding: 0.8vh 5vw;
   justify-content: space-between;
 }
 
@@ -480,7 +486,8 @@ textarea {
 
 /* Footer */
 footer {
-  background-color: rgba(37, 40, 52, 255);
+  /* background-color: rgba(37, 40, 52, 255); */
+  background-color: var(--lilium_logo_background_color);
   padding: 3.7vh 2vw;
   color: #fff;
   display: flex;
@@ -500,7 +507,9 @@ footer {
 .footer-columns h4 {
   margin-bottom: 1.85vh;
 }
-
+.copyright {
+  font-size: 1vw;
+}
 .footer-bottom {
   text-align: center;
   margin-top: 3.7vh;
@@ -508,6 +517,11 @@ footer {
 
 footer h5 {
   font-weight: 800;
+  font-size: 1.2vw;
+  margin-bottom: 0.41vw;
+}
+.footer-details {
+  font-size: 1vw;
 }
 
 footer a {
@@ -542,15 +556,17 @@ footer a:hover {
 .navbar .navbar-nav {
   border-radius: var(--rd, 10px);
   font-size: 0.93vw;
-  background-color: #000;
+  background-color: var(--lilium_logo_background_color);
   /* padding: 10px 20px 10px 20px; */
   padding: 0.9vh 1vw 0.9vh 1vw;
   font: var(--fnt, var(--font_1));
 }
 
 .navbar-brand img {
-  height: 5.55vh;
+  /* height: 5.55vh; */
+  height: 6vh;
   max-width: 100%;
+  border-radius: 10%;
 }
 
 
@@ -576,6 +592,7 @@ footer a:hover {
 
 .btn.get-a-quote {
 font-size: 0.9vw;
+background-color: var(--lilium_logo_background_color);
 }
 
 .get-a-quote {
@@ -586,7 +603,7 @@ font-size: 0.9vw;
   text-decoration: none;
   text-align: center;
   border-radius: 4px;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--lilium_logo_background_color);
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -595,9 +612,13 @@ font-size: 0.9vw;
   /* font: var(--fnt, var(--font_1)); */
 }
 
+.get-a-quote.whatsApp-logo {
+  padding: 0.9vh 1vw;
+  border: #777 solid 0.15vw;
+}
 .get-a-quote:hover {
-  background-color: rgba(166, 167, 149, 0.5);
-  color: rgb(4, 4, 5, 0.8);
+  background-color: rgba(34, 66, 92, 0.9);
+  color: white;
   text-decoration: none;
 }
 
@@ -675,10 +696,11 @@ a.btn.btn-primary.get-a-quote-navbar::before {
   position: absolute;
   min-width: 8.3vw;
   padding: 0.74vh 0.4vw;
-  background-color: black;
+  background-color: var(--lilium_logo_background_color);
   color: white;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   opacity: 0;
+  /* border-radius: 10%; */
 }
 
 .dropdown:hover .dropdown-menu,
@@ -883,6 +905,9 @@ body.loaded {
   color: #fff;
 }
 
+.WhatsApp-logo {
+  width: 7vw;
+}
 
 .welcome-introduction {
   max-height: 80vh;
@@ -894,7 +919,7 @@ body.loaded {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: var(--lilium_logo_background_color);
   max-height: 25vh;
   padding: 1.8vh 1vw;
 }

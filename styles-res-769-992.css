@@ -8,7 +8,7 @@
     .navbar .navbar-nav {
         border-radius: 0;
         font-size: 0.8vw;
-        background-color: #000;
+        background-color: var(--lilium_logo_background_color);
         padding: 0.9vh 0.5vw;
         margin-top: 0.9vh 0.9vw;
       }

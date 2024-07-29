@@ -90,9 +90,6 @@
         </li>
         </ul>
         <div class="nav-item"></div>
-        <div class="nav-item">
-          <a class="btn btn-primary get-a-quote-navbar get-a-quote" href="contact.html">Get a Quote</a>
-        </div>
     </div>
   </nav>
     `;
@@ -102,12 +99,14 @@
     footer.innerHTML = `
     <div class="footer-column">
     <h5>Contact</h5>
-    <p>Uziel 52, Jerusalem</p>
-    <p>Phone: (+) 972 58 763 0661</p>
-    <p>Email: office@liliumsolutions.com</p>
+    <p class="footer-details">Uziel 52, Jerusalem</p>
+    <p class="footer-details">Phone: (+) 972 58 763 0661</p>
+    <p class="footer-details">Email: shalibran@gmail.com</p>
     <br />
     
-    <a class="btn get-a-quote" href="contact.html">Get a Quote</a>
+    <a class="btn get-a-quote whatsApp-logo" href="contact.html">
+    <img class="WhatsApp-logo" src='images/WhatsApp_logo.svg' alt="WhatsApp Logo"/>
+    </a>
     <br />
     <p class="copyright">
     <br />
@@ -117,22 +116,22 @@
 
   <div class="footer-column">
   <h5>Menu</h5>
-<a href="index.html">Home</a>
+<a href="index.html" class="footer-details">Home</a>
   <br />
-  <a href="services.html">Services</a>
+  <a href="services.html" class="footer-details">Services</a>
   <br />
-  <a href="about.html">About</a>
+  <a href="about.html" class="footer-details">About</a>
   <br />
-  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="footer-details">Contact</a>
     </div>
     
   <div class="footer-column">
   <h5>Follow us on</h5>
-<a href="facebook.com">Facebook</a>
+<a href="facebook.com" class="footer-details">Facebook</a>
   <br />
-  <a href="linkedin.com">LinkedIn</a>
+  <a href="linkedin.com" class="footer-details">LinkedIn</a>
   <br />
-  <a href="twitter.com">Twitter</a>
+  <a href="twitter.com" class="footer-details">Twitter</a>
     </div>
     `;
   
