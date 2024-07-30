@@ -1,46 +1,48 @@
 @media (min-width: 769px) and (max-width: 992px) {
-    .my-element {
-        /* Styles for small desktops here */
-    }
+  .my-element {
+    /* Styles for small desktops here */
+  }
 }
 
 @media (max-width: 992px) {
-    .navbar .navbar-nav {
-        border-radius: 0;
-        font-size: 0.8vw;
-        background-color: var(--lilium_logo_background_color);
-        padding: 0.9vh 0.5vw;
-        margin-top: 0.9vh 0.9vw;
-      }
+  .navbar .navbar-nav {
+    border-radius: 0;
+    font-size: 0.8vw;
+    background-color: var(--lilium_logo_background_color);
+    padding: 0.9vh 0.5vw;
+    margin-top: 0.9vh 0.9vw;
+  }
 
-      .navbar .get-a-quote-navbar, a.btn.btn-primary.get-a-quote-navbar {
-        display: none;
-        margin: none;
-      }
+  .navbar .get-a-quote-navbar,
+  a.btn.btn-primary.get-a-quote-navbar {
+    display: none;
+    margin: none;
+  }
 
-      /* .navbar {
+  /* .navbar {
         padding-right: inherit;
         padding-left: inherit;
       } */
 
-      .hero {
-        align-items: unset;
-        padding: 9.25vh 1vw;
-      }
+  .hero {
+    align-items: unset;
+    padding: 9.25vh 1vw;
+  }
 
-      .hero h1 {
-        font-size: 2.5vw;
-        width: 80%;
-      }
+  .hero h1 {
+    font-size: 2.5vw;
+    width: 80%;
+  }
 
-      /* footer {
+  /* footer {
         display: block;
       } */
 
-      .team-member {
-        width: 90%;
-      }
-      /* .team-member h2 {
+  .team-member {
+    width: 90%;
+  }
+
+  /* .team-member h2 {
         font-size: 48px;
       }
 

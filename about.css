@@ -1,5 +1,8 @@
 .about-content {
-color: black;
+    max-width: 41.6vw;
+    text-align: left;
+    color: black;
+    padding-left: 1vw;
 }
 
 .about-content p {
@@ -7,12 +10,25 @@ color: black;
 }
 
 .about-img {
-    width: 30vw;
-    height: 25vw;
+    width: 43vw;
+    height: 32vw;
 }
+
 .article {
     display: flex;
 }
+
+.about-page {
+    padding-top: 12vh;
+}
+
 .about-img-container {
-    padding: 17vh;
+    /* padding: 17vh; */
+    /* padding: 7vh 0vw 0vh 0vw; */
+}
+
+.about-title {
+    font-size: var(--title_size);
+    font-weight: var(--title_weight);
+    color: var(--title_color);
 }
