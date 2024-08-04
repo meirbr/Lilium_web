@@ -102,7 +102,7 @@
     <p class="footer-details">Uziel 52, Jerusalem</p>
     <p class="footer-details">Phone: (+) 972 58 763 0661</p>
     <p class="footer-details">Email: shalibran@gmail.com</p>
-    <a class="btn get-a-quote whatsApp-logo" href="contact.html">
+    <a class="btn get-a-quote whatsApp-logo" href="https://wa.me/972587630661?text=Hello%2C%20I%20am%20interested%20in%20your%20software%20development%20services">
     <img class="WhatsApp-logo" src='images/WhatsApp_logo.svg' alt="WhatsApp Logo"/>
     </a>
     <p class="copyright">
