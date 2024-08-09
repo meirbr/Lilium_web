@@ -1017,10 +1017,10 @@ body.loaded {
   .WhatsApp-logo {
     width: 13vw;
   }
-footer {
-  height: 37vh;
-}
-.navbar-brand img {
-  padding-top: 3vh;
-}
+  footer {
+    height: 37vh;
+  }
+  .navbar-brand img {
+    padding-top: 3vh;
+  }
 }
