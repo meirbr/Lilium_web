@@ -264,10 +264,21 @@ main section {
   padding: 0vh 10.9vw 0vh 10.9vw;
 }
 
+
+.homepage-intro-section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
 .introduction-content {
   color: #000;
   padding: 8vh 3.9vw 5vh 5vw;
   font-size: clamp(0.7rem, 1.25vw, 4rem);
+}
+
+.intro-section-lilium-logo {
+  width: 20vw;
+  padding: 0vh 0vh 10vh 0vh;
 }
 
 .specialize-title {
@@ -882,9 +893,9 @@ body.loaded {
   padding: 4.62vh 1vw;
 
   object-fit: cover;
-  /* 
+  /*
   Photo by <a href="https://unsplash.com/@leyy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leyre</a> on <a href="https://unsplash.com/s/photos/future?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
       */
 
 }
@@ -1010,6 +1021,6 @@ footer {
   height: 37vh;
 }
 .navbar-brand img {
-  height: 3.5vh;
+  padding-top: 3vh;
 }
 }

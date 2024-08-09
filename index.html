@@ -15,19 +15,22 @@
 
   <main class="row">
     <article class="article hero-article row">
-    <section class="hero col-lg-6 col-md-6 col-sm-12">
-      <div class="hero-content">
-        <h1 class="title">Let's Make Your Tech Dreams a Reality</h1>
-        <p class="sub-title">Together we will pave the way to your next high-scale software,
-          it's going to be a great and efficient journey.</p>
-        <a class="btn get-a-quote" href="contact.html">Contact us</a>
-      </div>
-    </section>
-    <section class="image-section image1 col-lg-6 col-md-6 col-sm-12">
-      <figure class="intro-image-container">
-        <img class="intro-image" src="bg-1.webp"/>
-      </figure>
-    </section>
+      <section class="row homepage-intro-section">
+        <div class="hero col-lg-6 col-md-6 col-sm-12">
+          <div class="hero-content">
+            <img src="full-logo-gold.svg" class="intro-section-lilium-logo" alt="" id="intro-section-lilium-logo">
+            <h1 class="title">Let's Make Your Tech Dreams a Reality</h1>
+            <p class="sub-title">Together we will pave the way to your next high-scale software,
+              it's going to be a great and efficient journey.</p>
+            <a class="btn get-a-quote" href="contact.html">Contact us</a>
+          </div>
+        </div>
+        <div class="image-section image1 col-lg-6 col-md-6 col-sm-12">
+          <figure class="intro-image-container">
+            <img class="intro-image" src="homepage-decor.svg"/>
+          </figure>
+        </div>
+      </section>
     <section class="clients col-12">
       <h1>Trusted by leading brands and startups</h1>
       <div class="client-logos">
@@ -163,6 +166,31 @@
 
 
   <script src="script.js"></script>
+
+  <script>
+
+    function handleScrollLogoHomepage() {
+      const threshold = window.innerHeight * 0.3; // 10% of the viewport height in case of window.innerHeight * 0.1
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+      if (scrollTop > threshold) {
+        // document.getElementById('intro-section-lilium-logo').style.display = 'none';
+        // appear with transition from top to the element's place
+        document.getElementById('logo-menu-bar').style.transition = 'opacity 0.5s';
+        document.getElementById('logo-menu-bar').style.opacity = '1';
+      } else {
+        // document.getElementById('intro-section-lilium-logo').style.display = 'block';
+        document.getElementById('logo-menu-bar').style.transition = 'opacity 0.5s';
+        document.getElementById('logo-menu-bar').style.opacity = '0';
+      }
+    }
+
+    window.onload = function () {
+      document.getElementById('logo-menu-bar').style.opacity = '0';
+    }
+
+    window.onscroll = handleScrollLogoHomepage;
+  </script>
 </body>
 
 </html>

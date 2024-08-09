@@ -24,7 +24,7 @@
     linkStackpathBootstrap.rel = "stylesheet";
     var scriptJQuerySec = document.createElement('script');
     scriptJQuerySec.src = "https://code.jquery.com/jquery-3.5.1.slim.min.js";
-    
+
     var scriptJQueryThird = document.createElement('script');
     scriptJQueryThird.src = "https://code.jquery.com/jquery-3.6.0.min.js";
     var scriptJQueryFourth = document.createElement('script');
@@ -43,7 +43,7 @@
     // var pageTitle = document.createElement('title');
     // pageTitle.innerHTML = 'Lilium | ' + window.location.pathname.split('/').pop();
 
-    
+
     document.head.appendChild(linkLogo);
     // document.head.appendChild(pageTitle);
     document.head.appendChild(scriptJQuerySec);
@@ -59,14 +59,14 @@
     document.head.appendChild(linkStylesCssThree);
     document.head.appendChild(devIconCdn);
     document.head.appendChild(scriptFontawesome);
-    
+
     // Create a new header element
     const header = document.createElement('header');
     header.innerHTML = `
     <!-- Navbar and logo -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <a class="navbar-brand" href="index.html">
-      <img src="logo.webp" alt="Company Logo">
+      <img src="full-logo-gold.svg" class="logo-menu-bar" alt="Company Logo" id="logo-menu-bar">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -93,7 +93,7 @@
     </div>
   </nav>
     `;
-  
+
     // Create a new footer element
     const footer = document.createElement('footer');
     footer.innerHTML = `
@@ -116,19 +116,19 @@
   <a href="services.html" class="footer-details">Services</a>
   <a href="about.html" class="footer-details">About</a>
   <a href="contact.html" class="footer-details">Contact</a>
-    </div>    
+    </div>
   <div class="footer-column">
   <h5>Follow us on</h5>
   <a href="https://www.linkedin.com/company/lilium-solutions/" class="footer-details">LinkedIn</a>
     </div>
     `;
-  
+
     // Get the main content element
     const mainContent = document.querySelector('main');
-  
+
     // Insert the header before the main content
     await mainContent.parentNode.insertBefore(header, mainContent);
-  
+
     // Append the footer after the main content
     await mainContent.parentNode.appendChild(footer);
     addActiveLinktoActiveNavLink();
@@ -145,7 +145,7 @@
     });
     });
   }
-  
+
   function addActiveLinktoActiveNavLink() {
     // Get the current HTML file name
     var currentFileName = location.pathname.split("/").slice(-1)[0];
@@ -169,7 +169,7 @@
     // Fade in the main content container
     // var mainContent = document.querySelector('.main-content-container');
     // mainContent.classList.add('fade-in');
-  
+
     // Get all elements in the page
     var allElements = document.querySelectorAll('*');
     await allElements.forEach(async function(element) {
@@ -187,22 +187,22 @@
     // Fade in the body after the page is loaded
     document.body.classList.add('loaded');
   }
-  
+
   function isElementInViewport(element) {
     var rect = element.getBoundingClientRect();
     var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
     var windowWidth = (window.innerWidth || document.documentElement.clientWidth);
-  
+
     var vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
     var horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
-  
+
     return (vertInView && horInView);
   }
 
   function handleScroll() {
     var elements = document.querySelectorAll('.fade-on-scroll');
 
-    
+
     for (var i = 0; i < elements.length; i++) {
       if (isElementInViewport(elements[i])) {
         elements[i].classList.remove('fade-on-scroll');
@@ -210,5 +210,6 @@
       }
     }
   }
+
 
   window.addEventListener('scroll', handleScroll);

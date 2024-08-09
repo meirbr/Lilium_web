@@ -7,6 +7,10 @@
         width: 100%;
         /* padding: 75px 0px; */
       }
+
+      .logo-menu-bar {
+        padding-top: 3vh;
+      }
 }
 
 @media (max-width: 300px) {
