@@ -119,7 +119,7 @@
     </div>    
   <div class="footer-column">
   <h5>Follow us on</h5>
-  <a href="linkedin.com" class="footer-details">LinkedIn</a>
+  <a href="https://www.linkedin.com/company/lilium-solutions/" class="footer-details">LinkedIn</a>
     </div>
     `;
   

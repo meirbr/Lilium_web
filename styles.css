@@ -1,7 +1,7 @@
 :root {
   --main_background: rgb(236 236 236);
   --title_color: black;
-  --title_size: 2.5vw;
+  --title_size: clamp(1.8rem, 2.5vw, 4rem);
   --title_weight: bold;
   --logo_icon_color: #cd9b3d;
   --lilium_logo_background_color: #001628;
@@ -160,37 +160,38 @@ header {
   top: 0;
   z-index: 100;
 }
+
 .title-services {
   padding-left: 19%;
 }
+
 .title {
   font-size: var(--title_size);
   font-weight: var(--title_weight);
   color: var(--title_color);
 }
+
 .fill-details h2 {
-display: flex;
-justify-content: center;
-font-weight: 700;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
 }
+
 .submit-btn-services {
   display: flex;
   justify-content: center;
 }
+
 .quote-section .fill-details button {
   width: 100%;
 
 }
-.fill-details.sub-title{
-display: flex;
-justify-content: center;
-font-size: 1.5vw;
-padding: 2vh 0vw;
-}
 
-
-.intro-image-container {
-  /* padding-top: 5vh; */
+.fill-details.sub-title {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5vw;
+  padding: 2vh 0vw;
 }
 
 .intro-image {
@@ -198,10 +199,12 @@ padding: 2vh 0vw;
   padding: 0vw;
   height: 36vw;
 }
+
 .image2 {
   width: 100%;
-  height: 36.5vw;
+  height: 37vw;
 }
+
 .image3 {
   width: 100%;
   /* height: 25vw; */
@@ -254,10 +257,7 @@ main {
   background-color: var(--main_background);
   color: white;
 }
-.introduction-content {
-  /* padding: 11vh 3.9vw 5vh 5vw; */
-  padding: 8vh 3.9vw 5vh 5vw;
-}
+
 
 main section {
   /* padding: 12vh 3.9vw 5vh 3.9vw; */
@@ -266,7 +266,8 @@ main section {
 
 .introduction-content {
   color: #000;
-  font-size: 1.25vw;
+  padding: 8vh 3.9vw 5vh 5vw;
+  font-size: clamp(0.7rem, 1.25vw, 4rem);
 }
 
 .specialize-title {
@@ -279,24 +280,19 @@ main section {
   align-items: center;
   display: flex;
   padding: 2vh 5vw 3vh 5vw;
-  min-height: 75vh;
-}
-
-.hero-content {
-  min-height: 50vh;
 }
 
 .home-page-title {}
 
 .hero h1 {
-  font-size: 3vw;
+  font-size: clamp(2rem, 3vw, 4rem);
   margin-bottom: 1.85vh;
   color: black;
   font-weight: bold;
 }
 
 .hero p {
-  font-size: 1.25vw;
+  font-size: clamp(0.7rem, 1.25vw, 4rem);
   margin-bottom: 1.85vh;
   color: black;
 }
@@ -318,7 +314,7 @@ article {
 
 .challenge-content {
   color: #000;
-  font-size: 1.25vw;
+  font-size: clamp(0.7rem, 1.25vw, 4rem);
 }
 
 .clients {
@@ -338,6 +334,7 @@ article {
 
 .clients h1 {
   font-size: 1.6vw;
+  font-size: clamp(1rem, 1.6vw, 3rem);
 }
 
 .clients .client-logos {
@@ -454,12 +451,14 @@ form {
   gap: 0.5vw;
   grid-template-columns: 1fr 1fr;
 }
+
 .form-group-services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5vw;
   margin-bottom: 2vh;
 }
+
 input,
 textarea {
   padding: 0.9vh 0.5vw;
@@ -512,9 +511,11 @@ footer {
 .footer-columns h4 {
   margin-bottom: 1.85vh;
 }
+
 .copyright {
-  font-size: 1vw;
+  font-size:clamp(0.4rem, 1vw, 1rem);
 }
+
 .footer-bottom {
   text-align: center;
   margin-top: 3.7vh;
@@ -523,11 +524,12 @@ footer {
 footer h5 {
   font-weight: 800;
   font-size: 1.2vw;
+  font-size: clamp(0.6rem, 1.2vw, 2rem);
   margin-bottom: 0.41vw;
 }
 
 .footer-details {
-  font-size: 1vw;
+  font-size: clamp(0.4rem, 1vw, 2rem);
   display: flex;
   padding: 0.5vh 0vw;
 }
@@ -572,18 +574,22 @@ footer a:hover {
   padding: 0.9vh 1vw 0.9vh 1vw;
   font: var(--fnt, var(--font_1));
 }
+
 .navbar-brand {
   padding-top: 0.4vh;
-    padding-bottom: 0.4vh;
-    margin-right: 0.83vw;
-    font-size: 1vw;
+  padding-bottom: 0.4vh;
+  margin-right: 0.83vw;
+  font-size: 1vw;
 }
+
 .col-6 {
-padding-right: 0.78vw;
+  padding-right: 0.78vw;
 }
+
 .service-right-side {
   padding: 0px;
 }
+
 .navbar-brand img {
   /* height: 5.55vh; */
   height: 6vh;
@@ -613,8 +619,8 @@ padding-right: 0.78vw;
 }
 
 .btn.get-a-quote {
-font-size: 0.9vw;
-background-color: var(--lilium_logo_background_color);
+  font-size: clamp(0.5rem, 0.9vw, 4rem);
+  background-color: var(--lilium_logo_background_color);
 }
 
 .get-a-quote {
@@ -636,13 +642,15 @@ background-color: var(--lilium_logo_background_color);
 
 .row {
   margin-right: -0.78vw;
-    margin-left: -0.78vw;
+  margin-left: -0.78vw;
 }
+
 .get-a-quote.whatsApp-logo {
   margin: 1vh 0vw;
   padding: 0.9vh 1vw;
   border: #777 solid 0.15vw;
 }
+
 .get-a-quote:hover {
   background-color: rgba(34, 66, 92, 0.9);
   color: white;
@@ -693,12 +701,14 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 
 .navbar-toggler {
   padding: 0.37vh 0.62vw;
-  font-size: 1vw;
+  font-size: clamp(0.6rem, 1vw, 2rem);
 }
 
 .navbar-dark .navbar-toggler {
   /* border-color: rgba(255, 255, 255, 0.5); */
-  border-color: black;
+  background-color: #ececec;
+  border-color: var(--lilium_logo_background_color);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 .navbar-expand-lg {
@@ -815,15 +825,18 @@ body.loaded {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   /* transition: transform 0.3s ease; */
 }
+
 .service-imag {
   width: 100%;
   height: 40vh;
   /* height: 100%; */
   border-radius: 10%;
 }
+
 .service-card:hover {
   transform: scale(1.05);
-  outline: none; /* מסיר את ה-outline */
+  outline: none;
+  /* מסיר את ה-outline */
 }
 
 .service-name::before {
@@ -933,4 +946,70 @@ body.loaded {
   justify-items: center;
   padding: 1.9vh 0.5vw;
   margin: 0.9vh 0.5vw;
+}
+
+@media (max-width: 600px) {
+  .clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    text-align: center;
+    max-height: 2vh;
+    min-height: 12vh;
+  }
+
+  .clients .client-logo img {
+    width: 10vw;
+  }
+
+  .hero {
+    padding: 7vh 5vw 0vh 5vw;
+  }
+
+  .intro-image {
+    height: 20vh;
+  }
+
+  .intro-image-container {
+    padding: 2vh 0vw 0vh 0vw;
+  }
+
+  .welcome-introduction {
+    max-height: 0vh;
+  }
+
+  .hero-article {
+    min-height: 60vh;
+  }
+
+  .image-section {
+    padding: 0;
+  }
+  .image-section.image2 {
+    padding: 0;
+    max-height: 0;
+  }
+  .specialization {
+    max-height: 11vh;
+  }
+  .image2 {
+    height: 20vh;
+  }
+  .introduction-content {
+    padding: 2vh 3.9vw 0vh 5vw;
+  }
+  .article2 {
+    max-height: 50vh;
+  }
+  .WhatsApp-logo {
+    width: 13vw;
+  }
+footer {
+  height: 37vh;
+}
+.navbar-brand img {
+  height: 3.5vh;
+}
 }
