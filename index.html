@@ -35,7 +35,7 @@
       <h1>Trusted by leading brands and startups</h1>
 
 <div class="carousel-container">
-  <div class="client-logos">
+  <div class="client-logos" id="clients-logos">
     <!-- First set of logos -->
     <div class="client-logo">
       <a href="https://www.sheba.co.il/" target="_blank">
@@ -87,6 +87,16 @@
         <img src="mybi-logo.svg" alt="Client 3">
       </a>
     </div>
+    <div class="client-logo">
+      <a href="https://www.laniado.org.il/en/">
+        <img src="laniado-logo-2.svg" alt="Client 3">
+      </a>
+    </div>
+    <div class="client-logo">
+      <a href="https://netzahyehuda.org/">
+        <img src="netzah-logo.png" alt="Client 3">
+      </a>
+    </div>
   </div>
 </div>
     </section>
@@ -97,7 +107,7 @@
         <p>Whether you're interested in software development under a
           short deadline, or you're looking for high-quality tech experts
           with a deep understanding of technologies and development
-          models, We are here to help you achieve your business goals.
+          models, we are here to help you achieve your business goals.
           <br />
           <br />
           We are Lilium - A software house established by a small and
@@ -208,19 +218,42 @@
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
       if (scrollTop > threshold) {
-        // document.getElementById('intro-section-lilium-logo').style.display = 'none';
-        // appear with transition from top to the element's place
-        document.getElementById('logo-menu-bar').style.transition = 'opacity 0.5s';
-        document.getElementById('logo-menu-bar').style.opacity = '1';
+        showMenuAndLogo();
       } else {
-        // document.getElementById('intro-section-lilium-logo').style.display = 'block';
-        document.getElementById('logo-menu-bar').style.transition = 'opacity 0.5s';
-        document.getElementById('logo-menu-bar').style.opacity = '0';
+        hideMenuAndLogo();
       }
+    }
+
+    function feedCarousel () {
+      const carousel = document.getElementById('clients-logos');
+      const clientLogos = carousel.querySelectorAll('.client-logo');
+      const clientsLogosDiv = document.getElementById('clients-logos');
+      const clientLogosArray = Array.from(clientLogos);
+      const clientLogosLength = clientLogosArray.length;
+      let i = 0;
+      const copy = document.querySelector(".client-logos").cloneNode(true);
+      document.querySelector(".carousel-container").appendChild(copy);
+      const copySec = document.querySelector(".client-logos").cloneNode(true);
+      document.querySelector(".carousel-container").appendChild(copySec);
     }
 
     window.onload = function () {
       document.getElementById('logo-menu-bar').style.opacity = '0';
+      feedCarousel();
+    }
+
+    function showMenuAndLogo() {
+        document.getElementById('logo-menu-bar').style.transition = 'opacity 0.5s';
+        document.getElementById('logo-menu-bar').style.opacity = '1';
+        // document.querySelector('body').insertAdjacentHTML('beforeend', '<style>.navbar-dark .navbar-nav .nav-link {color: #fff; } </style>');
+        // document.querySelector('.navbar .navbar-nav').style.backgroundColor = 'var(--lilium_logo_background_color)';
+    }
+
+    function hideMenuAndLogo() {
+        document.getElementById('logo-menu-bar').style.transition = 'opacity 0.5s';
+        document.getElementById('logo-menu-bar').style.opacity = '0';
+        // document.querySelector('body').insertAdjacentHTML('beforeend', '<style>.navbar-dark .navbar-nav .nav-link {color: #c69629; } </style>');
+        // document.querySelector('.navbar .navbar-nav').style.backgroundColor = 'transparent';
     }
 
     window.onscroll = handleScrollLogoHomepage;

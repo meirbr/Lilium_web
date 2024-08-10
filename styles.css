@@ -970,7 +970,7 @@ body.loaded {
 
   .client-logos {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
   }
 
   .client-logo {
@@ -992,10 +992,6 @@ body.loaded {
     transform: translateX(-100%);
   }
 
-  /* make the disappearing .client-logo item appear again in the end of the line */
-  /* 50% {
-    transform: translateX(-100%);
-  } */
 }
 
 @media (max-width: 600px) {
