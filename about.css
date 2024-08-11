@@ -10,8 +10,14 @@
 }
 
 .about-img {
-    width: 43vw;
-    height: 32vw;
+    /* width: 43vw; */
+    height: 55vh;
+}
+
+.about-img-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .article {
