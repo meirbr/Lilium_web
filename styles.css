@@ -681,7 +681,7 @@ a.btn.btn-primary.get-a-quote-navbar {
   color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.03s;
   border-radius: var(--rd, 10px);
   /* font: var(--fnt, var(--font_1)); */
 }
@@ -708,7 +708,7 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #cd9b3d;
-  transition: color 0.4s;
+  transition: color 0.04s;
 }
 
 .navbar-toggler {
@@ -758,7 +758,7 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 .dropdown-menu:hover .dropdown-menu {
   display: block;
   opacity: 1;
-  transition: opacity 1s linear;
+  transition: opacity 0.1s linear;
 }
 
 /* Optional styling for dropdown items */
@@ -773,7 +773,7 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 .dropdown-menu a:hover {
   background-color: black;
   color: var(--logo_icon_color);
-  transition: color 0.4s;
+  transition: color 0.04s;
 }
 
 
@@ -785,7 +785,7 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 /* Apply the transition to the main content container */
 .main-content-container {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.05s ease-in-out;
 }
 
 /* Apply the transition to any elements you want to animate */
@@ -797,7 +797,7 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 /* Add the fade-in and slide-up animation */
 *.fade-in {
   opacity: 1;
-  transition: opacity 1.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.15s ease-in-out, transform 0.5s ease-in-out;
 }
 
 
@@ -805,7 +805,7 @@ a.btn.btn-primary.get-a-quote-navbar::before {
 body {
   overflow-x: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
   background: var(--main_background);
   min-height: 100%;
   background-attachment: fixed;
