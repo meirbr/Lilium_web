@@ -5,5 +5,24 @@ font-size: 1vw;
     font-size: var(--title_size);
     font-weight: var(--title_weight);
     color: var(--title_color);
-    padding: 10vh 0vw 3vh 0vw;
+}
+
+.contact {
+    padding: 10vh 0vw 10vh 0vw;
+}
+
+.contact-img-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.contact-img-col img {
+    height: 60%;
+}
+
+.contact-form-col {
+    display: flex;
+    align-items: center;
 }
