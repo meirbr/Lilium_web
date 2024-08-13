@@ -970,7 +970,7 @@ body.loaded {
 
   .client-logos {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite 0s normal;
   }
 
   .client-logo {
@@ -985,10 +985,10 @@ body.loaded {
 
 
 @keyframes scroll {
-  from {
-    transform: translateX(0);
+  0%{
+    transform: translateX(90%);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
 
